@@ -1,0 +1,66 @@
+.words {
+  color: white;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.words--back_button {
+  position: absolute;
+  top: 50px;
+  left: 50px; 
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition-property: background-color color;
+  transition-duration: 0.1s;
+}
+
+.words--back_button:hover {
+  background-color: white;
+  color: black;
+}
+
+.words--row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: rowBottomSlide 5s;
+}
+
+.words--word {
+  padding: 30px 10px 30px 10px;
+}
+
+.words--first_animation_priority {
+  animation: bottomSlide 1s;
+}
+
+.words--second_animation_priority {
+  animation: bottomSlide 3s;
+}
+
+.words--third_animation_priority {
+  animation: bottomSlide 5s;
+}
+
+@keyframes rowBottomSlide {
+  from {padding-top: 80px; opacity: 0;}
+  to {padding-top: 0; opacity: 1;}
+}
+
+@keyframes bottomSlide {
+  from {padding-top: 80px; opacity: 0;}
+  to {padding-top: 30px; opacity: 1;}
+}
