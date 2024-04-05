@@ -11,13 +11,16 @@ const LandingPage = () => {
 
   return (
     <div className="landingPage">
-      <div
-        className="landingPage--option"
-        onClick={() => {
-          HandleButtonClicked(0);
-        }}
-      >
-        Words Floating Intro
+      <div className="landingPage--heading">COOL SMALL THINGS BY SHEPE</div>
+      <div className="landingPage--options">
+        <div
+          className="landingPage--option"
+          onClick={() => {
+            HandleButtonClicked(0);
+          }}
+        >
+          Words Floating Intro
+        </div>
       </div>
     </div>
   );
